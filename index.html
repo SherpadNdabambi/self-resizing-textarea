@@ -1,16 +1,61 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
 
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="files/css/index.css">
+	<!--page title-->
+	<title>Self-Resizing Text Area</title>
+
+	<!--page description-->
+	<meta name="description" content="A textarea that increases its height when its contents exceed the scroll height.">
+
+	<!--character encoding-->
+	<meta charset="utf-8">
+
+	<!--device width-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--Open Graph tags-->
+	<meta property="og:title" content="Self-Resizing Text Area">
+	<meta property="og:description" content="A textarea that increases its height when its contents exceed the scroll height.">
+	<meta property="og:image" content="img/og-image.jpg">
+
+	<!--Twitter cards-->
+	<meta name="twitter:title" content="Self-Resizing Text Area">
+
+	<!--stylesheets-->
+  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+
+	<!--scripts-->
+	<script defer type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+	<script type="text/javascript" src="./js/includeLocal.js"></script>
+	<script defer type="text/javascript">window.jQuery || includeLocalJS("jquery-3.6.0.min.js");</script>
+	<script defer type="text/javascript">window.bootstrap || (includeLocalCSS("bootstrap.min.css") && includeLocalJS("bootstrap.min.js"))</script>
+	<script defer type="text/javascript">window.Popper || includeLocalJS("popper.min.js")</script>
+	<script defer type="text/javascript" src="./js/scripts.js"></script>
 
 </head>
 
 <body>
 
-	<textarea id="textarea" oninput="resizeTextArea(this)"></textarea>
+	<main class="container h-auto m-0 min-vh-100">
+
+		<h1>Self-Resizing Text Area</h1>
+
+		<p>A textarea that increases its height when its contents exceed the scroll height.</p>
+		
+		<textarea id="textarea" class="form-control" oninput="resizeTextArea(this)"></textarea>
+
+		<!-- Copyright -->
+		<div id="copyright" class="bottom center position-absolute bottom-0 start-50 translate-middle">
 	
-	<script type="text/javascript" src="files/js/index.js"></script>
+			&copy Sherpad Ndabambi <span id="footerYear"></span>
+	
+		</div>
+
+	</main>
 
 </body>
+</html>
